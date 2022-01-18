@@ -13,7 +13,7 @@ const LogInForm =({setToken})=>{
     let navigate = useNavigate()
     const state = useSelector((state) => state.state)
     const [isLogging, setIsLogging] = useState(false);
-    const [data, setData] = useState({nickname:'englishguy',password:'shanep'})
+    const [data, setData] = useState({nickname:'',password:''})
     const [showModal, setShowModal] = useState(false)
     const [message, setMessage] = useState('')
     const dispatch = useDispatch();
@@ -81,7 +81,7 @@ const LogInForm =({setToken})=>{
         </Form.Label>
         <FormControl  
             required
-            placeholder={'nickname'}
+            placeholder={state.interfaceStrings.nickname}
             value={data.nickname}
             onChange={(e) =>
                 setData({...data,nickname:e.target.value})
@@ -91,7 +91,7 @@ const LogInForm =({setToken})=>{
         </Form.Label>
         <FormControl  
             required
-            placeholder={'password'}
+            placeholder={state.interfaceStrings.password}
             value={data.password}
             onChange={(e) =>
                 setData({...data,password:e.target.value})
