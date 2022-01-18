@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import LanguageSelector from "./components/LanguageSelector/LanguageSelect";
+import WelcomePage from "./components/WelcomePage/WelcomePage";
+// import Translator from "./components/Translator/Translator";
+import Thoughts from "./components/Thoughts/Thoughts";
+import Navbar1 from "./components/Navbar1/Navbar1";
+import Groups from "./components/Groups/Groups";
+import User from "./components/User/User";
+import STT from "./components/STT/STT";
+import { useSelector } from "react-redux";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./index.css";
 
-function App() {
+const App = () => {
+  const state = useSelector((state) => state.state);
+
+  useEffect(() => {
+    console.log("changed state");
+  }, [state]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div style={{height:window.location.pathname!=="/" && '100vh', minHeight:"100vh"}}>
+      <Navbar1 />
+      <Routes>
+        <Route path="/" element={<WelcomePage />} />
+        <Route path="/homePage" element={<homePage />} />
+        {/* <Route path='/landingPage' element={<LandingPage/>}/> */}
+        <Route path="/groups" element={<Groups />} />
+        <Route path="/thoughts" element={<Thoughts />} />
+        <Route path="/user" element={<User />} />
+        <Route path="/languages" element={<LanguageSelector />} />
+        {/* <Route path='/translator' element={<Translator/>}/> */}
+        <Route path="/stt" element={<STT />} />
+        <Route path="*" element={<div>error</div>} />
+      </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

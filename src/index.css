@@ -1,13 +1,102 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+img.welcomeImage {
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+div.container {
+  background-color: beige;
+}
+
+div.welcome {
+  background-color: grey;
+}
+.profileArea {
+  margin-top: 10px;
+  text-align: center;
+}
+.fullname {
+  text-align: center;
+  margin-top: 10px;
+}
+.nickname {
+  text-align: center;
+  margin-top: 15px;
+}
+.languageSelector {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.myGroups {
+  margin-top: 20px;
+}
+.ChgPswd {
+  text-align: center;
+  margin-top: 20px;
+}
+.createArea {
+  display: flex;
+  margin-top: 20px;
+}
+.joinArea {
+  display: flex;
+  justify-self: flex-end;
+}
+img.dragon-image {
+  width: 50%;
+  border-radius: 50%;
+}
+
+img.family-image {
+  width: 100%;
+}
+
+div#root {
+  background-color: beige;
+}
+
+div.images.container {
+  position: relative;
+  text-align: center;
+  color: grey;
+  margin-bottom: 0%;
+  bottom: 25%;
+  box-shadow: 1px 1px 0 5px rgb(75, 69, 69);
+}
+
+h1 {
+  color: black;
+}
+
+img.family-image {
+  border-radius: 75%;
+}
+
+button.log-in.btn.btn-primary {
+  background-color: grey;
+  margin: 0;
+}
+
+button.btn.btn-primary {
+  background-color: grey;
+}
+.thing {
+  text-align: center;
+}
+.navButton {
+  margin-left: 15 px;
+}
+.NavContain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavButtonsArea {
+  display: inline-flex;
+}
+.NavMyGroupsBtn {
+  display: flex;
+}
+.flagImg {
+  float: right;
 }

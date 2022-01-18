@@ -1,0 +1,53 @@
+img.welcomeImage {
+    width: 100%;
+}
+
+div.container {
+    background-color: beige
+}
+
+div.welcome {
+    background-color: grey;
+}
+
+img.dragon-image {
+    width: 50%;
+    border-radius: 50%;
+}
+
+img.family-image {
+    width: 100%;
+}
+
+div#root {
+    background-color: beige
+}
+
+div.images.container {
+        position: relative;
+        text-align: center;
+        color: grey;
+        margin-bottom: 0%;
+        bottom: 25%;
+        box-shadow: 1px 1px 0 5px rgb(75, 69, 69);       
+}
+
+h1 {
+    color: black
+}
+
+img.family-image {
+    border-radius: 75%;
+}
+
+button.log-in.btn.btn-primary {
+    background-color: grey;
+    margin: 0;
+}
+
+button.btn.btn-primary {
+    background-color: grey;
+}
+.thing {
+    text-align: center;
+}
