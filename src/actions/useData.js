@@ -142,7 +142,7 @@ const state = (
   }
 };
 
-const url = "http://localhost:5000/";
+const url = "https://dragserv.herokuapp.com/";
 
 export const resetThoughts = () => async (dispatch) => {
   try {
