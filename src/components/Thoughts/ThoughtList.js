@@ -203,9 +203,6 @@ const ThoughtList = () => {
             <Button variant="secondary" onClick={handleDelete2}>
               {state.interfaceStrings.yes}
             </Button>
-            <Button variant="primary" onClick={handleDelete2}>
-              {state.interfaceStrings.no}
-            </Button>
             <Button
               variant="danger"
               onClick={() => setShowDeleteModal(!showDeleteModal)}
@@ -231,9 +228,6 @@ const ThoughtList = () => {
           <Modal.Footer>
             <Button variant="secondary" onClick={handleEdit2}>
               {state.interfaceStrings.send}
-            </Button>
-            <Button variant="primary" onClick={handleEdit2}>
-              Cancel
             </Button>
             <Button
               variant="danger"
