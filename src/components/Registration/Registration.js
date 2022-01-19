@@ -69,6 +69,7 @@ const Registration = (props) => {
             </Form.Label>
           <FormControl  
             required
+            type="password"
             //placeholder={'password'}
             value={data.password}
             onChange={(e) =>
@@ -79,6 +80,7 @@ const Registration = (props) => {
             </Form.Label>
           <FormControl  
             required
+            type="password"
             //placeholder={'verifyPassword'}
             value={data.verifyPassword}
             onChange={(e) =>

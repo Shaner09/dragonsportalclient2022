@@ -91,6 +91,7 @@ const LogInForm =({setToken})=>{
         </Form.Label>
         <FormControl  
             required
+            type="password"
             placeholder={state.interfaceStrings.password}
             value={data.password}
             onChange={(e) =>
